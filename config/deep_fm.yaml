@@ -1,0 +1,30 @@
+algo: "deep_fm"
+state_dim: 27
+action_dim: 1
+reward_dim: 8
+response_dim: 8
+max_action: 150
+max_buffer_size: 5000000
+discount: 0.99
+tau: 0.001
+
+max_steps: 16000
+# max_steps: 16
+test_every: 10
+log_every: 10
+save_every: 10000
+
+batch_size: 512
+
+save_model: True
+use_tensorboard: True
+bc_loss_coeff: 0.01
+
+reward_service: 0.1
+reward_business: 0.1
+reward_cleanliness: 0.1
+reward_check_in: 0.1
+reward_value: 0.1
+reward_rooms: 0.1
+reward_location: 0.1
+reward_overall: 10

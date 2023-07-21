@@ -1,0 +1,35 @@
+algo: "ddpg"
+state_dim: 1044
+action_dim: 1
+reward_dim: 7
+response_dim: 7
+max_action: 150
+max_buffer_size: 5000000
+discount: 0.99
+tau: 0.001
+
+max_steps: 1000000
+test_every: 20
+log_every: 20
+save_every: 30000
+
+batch_size: 512
+small_buffer: False
+
+save_model: False
+use_tensorboard: True
+bc_loss_coeff: 0.001
+
+reward_click: 0.1
+reward_like: 0.1
+reward_follow: 0.1
+reward_comment: 0.1
+reward_forward: 0.1
+reward_hate: -0.1
+reward_play_time: 30
+
+train_sl: False
+save_sl: False
+bc_steps: 1000000
+
+#full_data: True

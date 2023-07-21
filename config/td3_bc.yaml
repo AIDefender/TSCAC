@@ -1,0 +1,23 @@
+algo: "td3_bc"
+state_dim: 1044
+action_dim: 1
+reward_dim: 7
+response_dim: 7
+max_action: 150
+max_buffer_size: 5000000
+discount: 0.99
+tau: 0.005
+policy_noise: 0.2
+noise_clip: 0.5
+policy_freq: 2
+alpha: 2.5
+
+max_steps: 100
+test_every: 10
+log_every: 10
+save_every: 100
+
+batch_size: 1
+
+save_model: False
+use_tensorboard: True

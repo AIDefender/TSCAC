@@ -1,0 +1,31 @@
+algo: "a3c_loc"
+state_dim: 27
+action_dim: 1
+reward_dim: 8
+response_dim: 8
+max_action: 150
+max_buffer_size: 5000000
+discount: 0.99
+tau: 0.001
+
+max_steps: 160000
+test_every: 10
+log_every: 10000
+save_every: 100
+
+batch_size: 128
+
+save_model: False
+use_tensorboard: True
+bc_loss_coeff: 0.01
+
+reward_service: 1.0
+reward_business: 1.0
+reward_cleanliness: 1.0
+reward_check_in: 1.0
+reward_value: 1.0
+reward_rooms: 1.0
+reward_location: 100.0
+reward_overall: 10.0
+
+model_path: "/results/a3c/20/models/"

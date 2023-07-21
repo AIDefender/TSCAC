@@ -1,0 +1,32 @@
+algo: "awac_ddpg"
+state_dim: 27
+action_dim: 1
+reward_dim: 8
+response_dim: 8
+max_action: 150
+max_buffer_size: 5000000
+discount: 0.99
+tau: 0.001
+
+max_steps: 160000
+test_every: 10
+log_every: 10
+save_every: 10000
+
+batch_size: 512
+
+save_model: False
+use_tensorboard: True
+bc_loss_coeff: 0.01
+
+reward_service: 0.1
+reward_business: 0.1
+reward_cleanliness: 0.1
+reward_check_in: 0.1
+reward_value: 0.1
+reward_rooms: 0.1
+reward_location: 0.1
+reward_overall: 10
+
+sigma: 25.0
+constrained_policy_model_path: "/results/ddpg/40/models/"

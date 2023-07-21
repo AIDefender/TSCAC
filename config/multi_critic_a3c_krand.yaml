@@ -1,0 +1,45 @@
+algo: "multi_critic_a3c"
+state_dim: 1044
+action_dim: 1
+reward_dim: 7
+response_dim: 7
+max_action: 150
+max_buffer_size: 5000000
+discount: 0.99
+tau: 0.001
+
+max_steps: 500000
+test_every: 10
+log_every: 1000
+save_every: 1000
+
+batch_size: 128
+
+save_model: True
+use_tensorboard: True
+bc_loss_coeff: 0.01
+
+reward_service: 1.0
+reward_business: 1.0
+reward_cleanliness: 1.0
+reward_check_in: 1.0
+reward_value: 1.0
+reward_rooms: 1.0
+reward_location: 1.0
+reward_overall: 100
+
+model_path: "/results/multi_critic_a3c/9/models/"
+
+reward_click: 0.1
+reward_like: 0.1
+reward_follow: 0.1
+reward_comment: 0.1
+reward_forward: 0.1
+reward_hate: -0.1
+reward_play_time: 30
+
+train_sl: False
+save_sl: False
+small_buffer: False
+bc_load_path: "krand_sl_onehot_1"
+behavior_onehot: True

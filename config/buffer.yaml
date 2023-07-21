@@ -1,0 +1,7 @@
+
+state_dim: 27
+h_state_dim: 178
+action_dim: 1
+response_dim: 8
+h_response_dim: 2
+max_buffer_size: 3000000
